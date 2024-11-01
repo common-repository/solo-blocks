@@ -1,0 +1,107 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/typed",
+  "version": "0.1.0",
+  "title": "SB Typing Text",
+  "category": "sb-blocks",
+  "icon": "smiley",
+  "description": "Create typewriter animated text that will catch users' attention.",
+  "supports": {
+    "html": false,
+    "sb_uid": true
+  },
+  "keywords": [
+    "solo"
+  ],
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": [
+    "file:./frontend.js"
+  ],
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "strings": {
+      "type": "array",
+      "default": [
+        "Lorem ipsum dolor sit amet",
+        "Consectetur adipiscing elit",
+        "Vivamus est ante"
+      ]
+    },
+    "prefixText": {
+      "type": "string",
+      "default": ""
+    },
+    "suffixText": {
+      "type": "string",
+      "default": ""
+    },
+    "typeSpeed": {
+      "type": "number",
+      "default": 50
+    },
+    "startDelay": {
+      "type": "string",
+      "default": "0"
+    },
+    "backSpeed": {
+      "type": "number",
+      "default": 30
+    },
+    "smartBackspace": {
+      "type": "boolean",
+      "default": false
+    },
+    "backDelay": {
+      "type": "string",
+      "default": "700"
+    },
+    "loop": {
+      "type": "boolean",
+      "default": true
+    },
+    "loopCount": {
+      "type": "string",
+      "default": "1"
+    },
+    "showCursor": {
+      "type": "boolean",
+      "default": true
+    },
+    "cursorChar": {
+      "type": "string",
+      "default": "|"
+    },
+    "fadeOut": {
+      "type": "boolean",
+      "default": false
+    },
+    "contentAlignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "stringTypography": {
+      "type": "object"
+    },
+    "stringColor": {
+      "type": "string"
+    },
+    "prefixTypography": {
+      "type": "object"
+    },
+    "prefixColor": {
+      "type": "string"
+    },
+    "suffixTypography": {
+      "type": "object"
+    },
+    "suffixColor": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/section",
+  "title": "SB Section",
+  "category": "sb-blocks",
+  "description": "Display content in multiple columns, with blocks added to each column.",
+  "keywords": [
+    "container",
+    "wrapper",
+    "row",
+    "section",
+    "solo"
+  ],
+  "textdomain": "sb_columns",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "render": "file:./render.php",
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "script": "file:./frontend.js",
+  "attributes": {
+    "verticalAlignment": {
+      "type": "string",
+      "default": ""
+    },
+    "isStackedOnMobile": {
+      "type": "boolean",
+      "default": true
+    },
+    "maxWidth": {
+      "type": "string",
+      "default": "650"
+    },
+    "boxShadow": {
+      "type": "object"
+    },
+    "layout": {
+      "type": "object",
+      "default": {
+        "type": "flex",
+        "flexWrap": "nowrap"
+      }
+    }
+  },
+  "supports": {
+    "sb_uid": true,
+    "sb_background": true,
+    "sb_dimension": true,
+    "sb_typography": true,
+    "sb_box_shadow": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "color": {
+      "text": true,
+      "background": false
+    },
+    "html": false,
+    "spacing": false,
+    "__experimentalLayout": {
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "allowEditing": false,
+      "default": {
+        "type": "flex",
+        "flexWrap": "nowrap"
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    }
+  }
+}

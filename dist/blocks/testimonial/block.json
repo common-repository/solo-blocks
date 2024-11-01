@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/testimonial",
+  "version": "0.1.0",
+  "title": "SB Testimonial",
+  "category": "sb-blocks",
+  "icon": "smiley",
+  "description": "Add a customer's feedback text, the title, position, and avatar.",
+  "supports": {
+    "html": false,
+    "sb_uid": true
+  },
+  "keywords": [
+    "solo"
+  ],
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": "file:./frontend.js",
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "image": {
+      "type": "object",
+      "default": {
+        "id": -1
+      }
+    },
+    "description": {
+      "type": "string",
+      "default": "Add a customer's feedback text"
+    },
+    "name": {
+      "type": "string",
+      "default": "The title"
+    },
+    "company": {
+      "type": "string",
+      "default": "Position"
+    },
+    "descriptionTypography": {
+      "type": "object"
+    },
+    "nameTypography": {
+      "type": "object"
+    },
+    "companyTypography": {
+      "type": "object"
+    },
+    "contentAlignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "imagePosition": {
+      "type": "string",
+      "default": "left"
+    },
+    "authorImageAlignment": {
+      "type": "string",
+      "default": "top"
+    },
+    "imageSize": {
+      "type": "number",
+      "default": 70
+    },
+    "imageSpacing": {
+      "type": "number",
+      "default": 20
+    },
+    "imageRadius": {
+      "type": "number",
+      "default": 50
+    },
+    "verticalAlignment": {
+      "type": "string",
+      "default": "top"
+    },
+    "descriptionColor": {
+      "type": "string"
+    },
+    "nameColor": {
+      "type": "string"
+    },
+    "companyColor": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/tabs",
+  "version": "0.1.0",
+  "title": "SB Tabs",
+  "category": "sb-blocks",
+  "keywords": [
+    "solo"
+  ],
+  "icon": "smiley",
+  "description": "Create informative and compact content blocks with nested tabs.",
+  "supports": {
+    "html": false,
+    "sb_uid": true
+  },
+  "providesContext": {
+    "_uid": "_uid",
+    "selectedItem": "selectedItem",
+    "titleSize": "titleSize"
+  },
+  "textdomain": "sb_logo",
+  "editorScript": [
+    "file:./editor.js"
+  ],
+  "editorStyle": [
+    "file:./editor.css"
+  ],
+  "script": [
+    "file:./frontend.js"
+  ],
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "selectedItem": {
+      "type": "string"
+    },
+    "titleSize": {
+      "type": "string",
+      "default": "div"
+    },
+    "titleAlignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "titleTypography": {
+      "type": "object"
+    },
+    "contentTypography": {
+      "type": "object"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "titleBgColor": {
+      "type": "string"
+    },
+    "titleColorActive": {
+      "type": "string",
+      "default": "#0c63e4"
+    },
+    "titleBgColorActive": {
+      "type": "string",
+      "default": "#e7f1ff"
+    },
+    "contentColor": {
+      "type": "string"
+    },
+    "border": {
+      "type": "string",
+      "default": "solid"
+    },
+    "borderWidth": {
+      "type": "number",
+      "default": 1
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "#dddddd"
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 3
+    },
+    "titleSpacing": {
+      "type": "number",
+      "default": 0
+    },
+    "disableTitleBorder": {
+      "type": "boolean",
+      "default": false
+    },
+    "disableContentBorder": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

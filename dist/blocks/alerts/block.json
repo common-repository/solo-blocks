@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/alerts",
+  "version": "0.1.0",
+  "title": "SB Alerts",
+  "category": "sb-blocks",
+  "icon": "smiley",
+  "keywords": [
+    "solo"
+  ],
+  "description": "Add alert content box to display info, success, warning or error.",
+  "supports": {
+    "html": false,
+    "align": false,
+    "sb_uid": true,
+    "sb_dimension": false
+  },
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": "file:./frontend.js",
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
+    "content_alignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "blockType": {
+      "type": "string",
+      "default": "success"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "linkColor": {
+      "type": "string"
+    },
+    "blockTypography": {
+      "type": "object"
+    },
+    "highlight": {
+      "type": "boolean",
+      "default": false
+    },
+    "highlightColor": {
+      "type": "string"
+    }
+  }
+}

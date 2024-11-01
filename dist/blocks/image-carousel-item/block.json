@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/image-carousel-item",
+  "version": "0.1.0",
+  "title": "Image",
+  "category": "sb-blocks",
+  "keywords": [
+    "solo"
+  ],
+  "parent": [
+    "sb/image-carousel"
+  ],
+  "icon": "smiley",
+  "description": "Use this block option to replace the image with a new one.",
+  "supports": {
+    "html": false
+  },
+  "usesContext": [
+    "imageSize",
+    "lightbox",
+    "uid"
+  ],
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "attributes": {
+    "id": {
+      "type": "number"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

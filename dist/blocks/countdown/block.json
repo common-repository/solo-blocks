@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/countdown",
+  "version": "0.1.0",
+  "title": "SB Countdown",
+  "category": "sb-blocks",
+  "icon": "smiley",
+  "description": "Create a live countdown timer with numeric values and time labels.",
+  "supports": {
+    "html": false,
+    "sb_uid": true,
+    "sb_dimension": false
+  },
+  "keywords": [
+    "solo"
+  ],
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": [
+    "jquery",
+    "file:./frontend.js"
+  ],
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "date": {
+      "type": "string"
+    },
+    "showMonths": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDays": {
+      "type": "boolean",
+      "default": true
+    },
+    "showHours": {
+      "type": "boolean",
+      "default": true
+    },
+    "showMinutes": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSeconds": {
+      "type": "boolean",
+      "default": true
+    },
+    "contentAlignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "digitsTypography": {
+      "type": "object",
+      "default": {
+        "fontSize": "50px",
+        "lineHeight": "1em"
+      }
+    },
+    "digitsColor": {
+      "type": "string"
+    },
+    "descriptionTypography": {
+      "type": "object"
+    },
+    "descriptionColor": {
+      "type": "string",
+      "default": "#7a7a7a"
+    },
+    "itemSpacing": {
+      "type": "number",
+      "default": 30
+    }
+  }
+}

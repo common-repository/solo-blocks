@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/toggle",
+  "version": "0.1.0",
+  "title": "SB Toggle",
+  "category": "sb-blocks",
+  "keywords": [
+    "solo"
+  ],
+  "icon": "smiley",
+  "description": "Build vertically collapsing toggles with any content.",
+  "supports": {
+    "html": false,
+    "align": true,
+    "sb_uid": true
+  },
+  "providesContext": {
+    "selectedItem": "selectedItem",
+    "initialOpen": "initialOpen",
+    "titleSize": "titleSize",
+    "_uid": "_uid"
+  },
+  "textdomain": "sb_logo",
+  "editorScript": [
+    "jquery-ui-accordion",
+    "file:./editor.js"
+  ],
+  "editorStyle": [
+    "jquery-ui",
+    "file:./editor.css"
+  ],
+  "attributes": {
+    "selectedItem": {
+      "type": "string"
+    },
+    "initialOpen": {
+      "type": "number",
+      "default": 0
+    },
+    "iconPosition": {
+      "type": "string",
+      "default": "blockRight"
+    },
+    "titleSize": {
+      "type": "string",
+      "default": "div"
+    },
+    "titleTypography": {
+      "type": "object"
+    },
+    "contentTypography": {
+      "type": "object"
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "titleBgColor": {
+      "type": "string"
+    },
+    "titleColorActive": {
+      "type": "string",
+      "default": "#0c63e4"
+    },
+    "titleBgColorActive": {
+      "type": "string",
+      "default": "#e7f1ff"
+    },
+    "contentColor": {
+      "type": "string"
+    },
+    "border": {
+      "type": "string",
+      "default": "solid"
+    },
+    "borderWidth": {
+      "type": "number",
+      "default": 1
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "#dddddd"
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 3
+    },
+    "enableActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

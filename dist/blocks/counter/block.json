@@ -1,0 +1,153 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/counter",
+  "version": "0.1.0",
+  "title": "SB Counter",
+  "category": "sb-blocks",
+  "icon": "smiley",
+  "keywords": [
+    "solo"
+  ],
+  "description": "Showcase your milestones with the animated number counter.",
+  "supports": {
+    "html": false,
+    "align": false,
+    "sb_uid": true,
+    "sb_dimension": false
+  },
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": "file:./frontend.js",
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
+    "startNumber": {
+      "type": "string",
+      "default": "1"
+    },
+    "endNumber": {
+      "type": "string",
+      "default": "100"
+    },
+    "description": {
+      "type": "string",
+      "default": "A smile is the universal welcome"
+    },
+    "duration": {
+      "type": "string",
+      "default": "2"
+    },
+    "useEasing": {
+      "type": "string"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "separator_enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "decimal": {
+      "type": "number",
+      "default": 0
+    },
+    "separator": {
+      "type": "string",
+      "default": ","
+    },
+    "decimal_point": {
+      "type": "string",
+      "default": "."
+    },
+    "show_icon": {
+      "type": "boolean",
+      "default": true
+    },
+    "icon_position": {
+      "type": "string",
+      "default": "top"
+    },
+    "icon_image": {
+      "type": "string",
+      "default": "icon"
+    },
+    "icon": {
+      "type": "object",
+      "default": {
+        "name": "face-smile",
+        "category": "regular"
+      }
+    },
+    "image": {
+      "type": "object",
+      "default": {
+        "width": "150",
+        "height": "150"
+      }
+    },
+    "digits_typography": {
+      "type": "object"
+    },
+    "digits_color": {
+      "type": "string"
+    },
+    "description_typography": {
+      "type": "object"
+    },
+    "description_color": {
+      "type": "string"
+    },
+    "icon_size": {
+      "type": "number",
+      "default": 42
+    },
+    "icon_color": {
+      "type": "string"
+    },
+    "icon_view_type": {
+      "type": "string",
+      "default": "default"
+    },
+    "icon_background": {
+      "type": "string"
+    },
+    "icon_border": {
+      "type": "string",
+      "default": "none"
+    },
+    "icon_border_width": {
+      "type": "number",
+      "default": 1
+    },
+    "icon_border_color": {
+      "type": "string"
+    },
+    "icon_border_radius": {
+      "type": "number",
+      "default": 0
+    },
+    "icon_padding": {
+      "type": "number",
+      "default": 20
+    },
+    "content_alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "icon_spacing": {
+      "type": "number",
+      "default": 10
+    }
+  }
+}

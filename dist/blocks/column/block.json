@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/column",
+  "title": "SB Column",
+  "category": "sb-blocks",
+  "keywords": [
+    "solo"
+  ],
+  "parent": [
+    "sb/section"
+  ],
+  "description": "A single column within a columns block.",
+  "textdomain": "sb_columns",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "wp-sb-frontend",
+    "file:./style-index.css"
+  ],
+  "render": "file:./render.php",
+  "attributes": {
+    "verticalAlignment": {
+      "type": "string",
+      "default": "top"
+    },
+    "width": {
+      "type": "string",
+      "default": "25"
+    },
+    "allowedBlocks": {
+      "type": "array"
+    },
+    "templateLock": {
+      "type": [
+        "string",
+        "boolean"
+      ],
+      "enum": [
+        "all",
+        "insert",
+        "contentOnly",
+        false
+      ]
+    }
+  },
+  "supports": {
+    "sb_uid": true,
+    "sb_background": true,
+    "sb_dimension": true,
+    "sb_typography": true,
+    "sb_box_shadow": true,
+    "color": {
+      "text": true,
+      "background": false
+    },
+    "anchor": true,
+    "reusable": false,
+    "html": false,
+    "spacing": false,
+    "__experimentalBorder": {
+      "color": true,
+      "style": true,
+      "width": true,
+      "radius": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "style": true,
+        "width": true,
+        "radius": true
+      }
+    },
+    "__experimentalLayout": true
+  }
+}

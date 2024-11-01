@@ -1,0 +1,141 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/pricing-box",
+  "version": "0.1.0",
+  "title": "SB Pricing Box",
+  "category": "sb-blocks",
+  "keywords": [
+    "solo",
+    "price"
+  ],
+  "icon": "smiley",
+  "description": "Create a simple price table with this flexible pricing box.",
+  "supports": {
+    "html": false,
+    "align": false,
+    "sb_uid": true,
+    "sb_dimension": false,
+    "sb_background": true,
+    "sb_box_shadow": true
+  },
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": "file:./frontend.js",
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
+    "contentAlignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "titleText": {
+      "type": "string",
+      "default": "Starter"
+    },
+    "titleSize": {
+      "type": "string",
+      "default": "h4"
+    },
+    "pricePrefix": {
+      "type": "string",
+      "default": "$"
+    },
+    "priceCount": {
+      "type": "string",
+      "default": "29"
+    },
+    "priceSuffix": {
+      "type": "string",
+      "default": "/mo"
+    },
+    "titleTypography": {
+      "type": "object"
+    },
+    "pricePrefixTypography": {
+      "type": "object",
+      "default": {
+        "fontSize": "50px",
+        "lineHeight": "1em",
+        "fontWeight": "700"
+      }
+    },
+    "priceCountTypography": {
+      "type": "object",
+      "default": {
+        "fontSize": "50px",
+        "lineHeight": "1em",
+        "fontWeight": "700"
+      }
+    },
+    "priceSuffixTypography": {
+      "type": "object",
+      "default": {
+        "fontSize": "1em",
+        "lineHeight": "1em"
+      }
+    },
+    "titleColor": {
+      "type": "string"
+    },
+    "pricePrefixColor": {
+      "type": "string"
+    },
+    "priceCountColor": {
+      "type": "string"
+    },
+    "priceSuffixColor": {
+      "type": "string",
+      "default": "#6c757d"
+    },
+    "verticalAlignment": {
+      "type": "string",
+      "default": "middle"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": true
+    },
+    "featuredText": {
+      "type": "string",
+      "default": "Most Popular"
+    },
+    "featuredColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "featuredBg": {
+      "type": "string",
+      "default": "#0d6efd"
+    },
+    "featuredTypography": {
+      "type": "object",
+      "default": {
+        "fontSize": "16px"
+      }
+    },
+    "border": {
+      "type": "string",
+      "default": "solid"
+    },
+    "borderWidth": {
+      "type": "number",
+      "default": 1
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "#ebecee"
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 0
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/search",
+  "version": "0.1.0",
+  "title": "SB search",
+  "keywords": [
+    "solo"
+  ],
+  "category": "sb-blocks",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false,
+    "sb_uid": true
+  },
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "wp-sb-frontend",
+    "file:./style-index.css"
+  ],
+  "attributes": {},
+  "render": "file:./render.php"
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/icon",
+  "version": "0.1.0",
+  "title": "SB Icon",
+  "category": "sb-blocks",
+  "icon": "smiley",
+  "keywords": [
+    "solo"
+  ],
+  "description": "Insert any icon from existing library or an SVG icon.",
+  "supports": {
+    "html": false,
+    "align": false,
+    "sb_uid": true,
+    "sb_dimension": false
+  },
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": "file:./frontend.js",
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
+    "icon": {
+      "type": "object",
+      "default": {
+        "name": "face-smile",
+        "category": "regular"
+      }
+    },
+    "link": {
+      "type": "string",
+      "default": "#"
+    },
+    "icon_size": {
+      "type": "number",
+      "default": 42
+    },
+    "icon_color": {
+      "type": "string"
+    },
+    "icon_color_hover": {
+      "type": "string",
+      "default": ""
+    },
+    "icon_view_type": {
+      "type": "string",
+      "default": "default"
+    },
+    "icon_background": {
+      "type": "string",
+      "default": ""
+    },
+    "icon_background_hover": {
+      "type": "string",
+      "default": ""
+    },
+    "icon_border": {
+      "type": "string",
+      "default": "none"
+    },
+    "icon_border_width": {
+      "type": "number",
+      "default": 1
+    },
+    "icon_border_color": {
+      "type": "string",
+      "default": ""
+    },
+    "icon_border_color_hover": {
+      "type": "string",
+      "default": ""
+    },
+    "icon_border_radius": {
+      "type": "number",
+      "default": 0
+    },
+    "icon_padding": {
+      "type": "number",
+      "default": 20
+    },
+    "content_alignment": {
+      "type": "string",
+      "default": "center"
+    }
+  }
+}

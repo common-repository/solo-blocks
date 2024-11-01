@@ -1,0 +1,101 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/group",
+  "title": "SB Group",
+  "category": "sb-blocks",
+  "description": "Gather blocks in a layout container.",
+  "keywords": [
+    "container",
+    "wrapper",
+    "row",
+    "section",
+    "solo"
+  ],
+  "textdomain": "sb_group",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "wp-sb-frontend",
+    "file:./style-index.css"
+  ],
+  "render": "file:./render.php",
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "tagNameTablet": {
+      "type": "string",
+      "default": "div"
+    },
+    "tagNameMobile": {
+      "type": "string",
+      "default": "div"
+    },
+    "templateLock": {
+      "type": [
+        "string",
+        "boolean"
+      ],
+      "enum": [
+        "all",
+        "insert",
+        "contentOnly",
+        false
+      ]
+    },
+    "background": {
+      "type": "object",
+      "default": {
+        "selectType": "color",
+        "colorValue": "",
+        "gradientValue": "",
+        "mediaValue": {
+          "contentPosition": "",
+          "id": "",
+          "useFeaturedImage": "",
+          "dimRatio": "",
+          "focalPoint": "",
+          "hasParallax": "",
+          "isDark": "",
+          "isRepeated": "",
+          "minHeight": "",
+          "minHeightUnit": "",
+          "alt": "",
+          "allowedBlocks": "",
+          "templateLock": ""
+        }
+      }
+    },
+    "paddingDesktop": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "left": "",
+        "bottom": "",
+        "right": ""
+      }
+    }
+  },
+  "supports": {
+    "sb_uid": true,
+    "__experimentalOnEnter": true,
+    "__experimentalSettings": true,
+    "spacing": {
+      "blockGap": true,
+      "padding": true,
+      "__experimentalDefaultControls": {
+        "padding": true
+      }
+    },
+    "align": [
+      "wide",
+      "full"
+    ],
+    "anchor": true,
+    "ariaLabel": true,
+    "html": false,
+    "__experimentalLayout": true
+  }
+}

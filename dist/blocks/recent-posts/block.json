@@ -1,0 +1,113 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/recent-posts",
+  "version": "0.1.0",
+  "title": "SB Recent Posts",
+  "category": "sb-blocks",
+  "icon": "smiley",
+  "description": "Display the most recent posts to see what’s new on your blog.",
+  "supports": {
+    "html": false,
+    "sb_uid": true
+  },
+  "keywords": [
+    "solo"
+  ],
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": "file:./frontend.js",
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "providesContext": {
+    "postType": "postType",
+    "queryId": "queryId"
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
+    "postType": {
+      "type": "string",
+      "default": "post"
+    },
+    "query": {
+      "type": "object",
+      "default": {
+        "perPage": 12,
+        "pages": 0,
+        "offset": 0,
+        "postType": "post",
+        "order": "desc",
+        "orderBy": "date",
+        "author": "",
+        "search": "",
+        "exclude": [],
+        "sticky": "",
+        "inherit": true,
+        "taxQuery": null,
+        "parents": []
+      }
+    },
+    "showFeaturedImage": {
+      "type": "boolean",
+      "default": true
+    },
+    "imageProportion": {
+      "type": "string",
+      "default": "original"
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "full"
+    },
+    "postCategories": {
+      "type": "boolean",
+      "default": true
+    },
+    "postAuthor": {
+      "type": "boolean",
+      "default": true
+    },
+    "postDate": {
+      "type": "boolean",
+      "default": true
+    },
+    "postComments": {
+      "type": "boolean",
+      "default": true
+    },
+    "itemsPerLine": {
+      "type": "string",
+      "default": "1"
+    },
+    "spacingBetweenItems": {
+      "type": "number",
+      "default": 30
+    },
+    "displayExcerpt": {
+      "type": "boolean",
+      "default": true
+    },
+    "excerptLength": {
+      "type": "number",
+      "default": 20
+    },
+    "showMoreButtonEnable": {
+      "type": "boolean",
+      "default": true
+    },
+    "showMoreButtonTitle": {
+      "type": "string",
+      "default": "Read More"
+    },
+    "titleTag": {
+      "type": "string",
+      "default": "h2"
+    }
+  }
+}

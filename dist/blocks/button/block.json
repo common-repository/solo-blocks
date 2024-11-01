@@ -1,0 +1,137 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/button",
+  "version": "0.1.0",
+  "title": "SB Button",
+  "category": "sb-blocks",
+  "icon": "smiley",
+  "description": "Create the stylish custom call to action button for your website.",
+  "supports": {
+    "html": false,
+    "sb_uid": true,
+    "sb_dimension": false
+  },
+  "keywords": [
+    "solo"
+  ],
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": "file:./frontend.js",
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
+    "#########################_content": {
+      "type": "comment"
+    },
+    "button_title": {
+      "type": "string",
+      "default": "Button Title"
+    },
+    "link": {
+      "type": "string",
+      "default": "#"
+    },
+    "button_size": {
+      "type": "string",
+      "default": "normal"
+    },
+    "button_padding": {
+      "type": "object"
+    },
+    "#########################_settings": {
+      "type": "comment"
+    },
+    "button_alignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "show_icon": {
+      "type": "boolean",
+      "default": true
+    },
+    "icon_position": {
+      "type": "string",
+      "default": "left"
+    },
+    "icon_image": {
+      "type": "string",
+      "default": "icon"
+    },
+    "btn_icon": {
+      "type": "object",
+      "default": {
+        "name": "wordpress",
+        "category": "brands"
+      }
+    },
+    "btn_image": {
+      "type": "object"
+    },
+    "backgroundControl": {
+      "type": "object",
+      "default": {
+        "color": "#ffffff"
+      }
+    },
+    "backgroundControlHover": {
+      "type": "object"
+    },
+    "icon_size": {
+      "type": "number",
+      "default": 42
+    },
+    "icon_spacing": {
+      "type": "number",
+      "default": 20
+    },
+    "btn_typography": {
+      "type": "object",
+      "default": ""
+    },
+    "buttonShadow": {
+      "type": "object"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "iconColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "titleColorHover": {
+      "type": "string"
+    },
+    "iconColorHover": {
+      "type": "string"
+    },
+    "btn_border": {
+      "type": "string",
+      "default": "solid"
+    },
+    "btn_border_width": {
+      "type": "number",
+      "default": 1
+    },
+    "btn_border_color": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "btn_border_color_hover": {
+      "type": "string",
+      "default": ""
+    },
+    "btn_border_radius": {
+      "type": "number",
+      "default": 0
+    }
+  }
+}

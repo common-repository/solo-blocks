@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/accordion-item",
+  "version": "0.1.0",
+  "title": "SB Accordion Item",
+  "category": "sb-blocks",
+  "keywords": [
+    "solo"
+  ],
+  "parent": [
+    "sb/accordion"
+  ],
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "usesContext": [
+    "selectedItem",
+    "initialOpen",
+    "titleSize",
+    "_uid"
+  ],
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "object"
+    }
+  }
+}

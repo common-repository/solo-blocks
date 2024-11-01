@@ -1,0 +1,109 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/image-carousel",
+  "version": "0.1.0",
+  "title": "SB Image Carousel",
+  "category": "sb-blocks",
+  "keywords": [
+    "solo"
+  ],
+  "icon": "smiley",
+  "description": "Create a slideshow for cycling through a selected set of images.",
+  "supports": {
+    "html": false,
+    "align": false,
+    "sb_uid": true,
+    "sb_dimension": false
+  },
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": "file:./frontend.js",
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "providesContext": {
+    "imageSize": "imageSize",
+    "lightbox": "lightbox",
+    "uid": "_uid"
+  },
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "center"
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "medium_large"
+    },
+    "carouselPerView": {
+      "type": "number",
+      "default": 3
+    },
+    "carouselPerViewTablet": {
+      "type": "number",
+      "default": 3
+    },
+    "carouselPerViewMobile": {
+      "type": "number",
+      "default": 2
+    },
+    "carouselCenterMode": {
+      "type": "boolean"
+    },
+    "carouselFocusAt": {
+      "type": "string"
+    },
+    "carouselGap": {
+      "type": "string",
+      "default": "10"
+    },
+    "carouselAutoplay": {
+      "type": "string"
+    },
+    "carouselAnimationDuration": {
+      "type": "string",
+      "default": "400"
+    },
+    "carouselPeek": {
+      "type": "string",
+      "default": "0"
+    },
+    "carouselArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "carouselDots": {
+      "type": "boolean",
+      "default": true
+    },
+    "imgFit": {
+      "type": "string",
+      "default": "cover"
+    },
+    "verticalAlignment": {
+      "type": "string",
+      "default": "middle"
+    },
+    "animationEffect": {
+      "type": "string",
+      "default": "slide"
+    },
+    "lightbox": {
+      "type": "boolean",
+      "default": true
+    },
+    "carouselHeight": {
+      "type": "string",
+      "default": "400px"
+    },
+    "carouselHeightTablet": {
+      "type": "string"
+    },
+    "carouselHeightMobile": {
+      "type": "string"
+    }
+  }
+}

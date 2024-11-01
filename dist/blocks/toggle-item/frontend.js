@@ -1,0 +1,1 @@
+(()=>{"use strict";window.wp.sbFrontend.Hooks.doAction("register","toggle-item",(function(e,t){var i="sb-toggle-item-active",o=jQuery(e),s=o.find(".sb-toggle-item-title"),g=o.find(".sb-toggle-item-content");s.on("click",(function(){o.hasClass(i)?(o.removeClass(i),g.slideToggle(!1)):(o.addClass(i),g.slideToggle(!0))}))}))})();

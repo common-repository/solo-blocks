@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/delimiter",
+  "version": "0.1.0",
+  "title": "SB Delimiter",
+  "category": "sb-blocks",
+  "icon": "smiley",
+  "keywords": [
+    "solo"
+  ],
+  "description": "Mark the start and end of a content block.",
+  "supports": {
+    "html": false,
+    "sb_uid": true
+  },
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "style": [
+    "wp-sb-frontend",
+    "file:./editor.css"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "left"
+    },
+    "color": {
+      "type": "string",
+      "default": ""
+    },
+    "width": {
+      "type": "number",
+      "default": "1"
+    },
+    "height": {
+      "type": "number",
+      "default": "35"
+    }
+  },
+  "render": "file:./render.php"
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/toggle-item",
+  "version": "0.1.0",
+  "title": "SB Toggle Item",
+  "category": "sb-blocks",
+  "keywords": [
+    "solo"
+  ],
+  "parent": [
+    "sb/toggle"
+  ],
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "usesContext": [
+    "selectedItem",
+    "initialOpen",
+    "titleSize",
+    "_uid"
+  ],
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": [
+    "jquery-ui-accordion",
+    "file:./frontend.js"
+  ],
+  "style": [
+    "wp-sb-frontend",
+    "jquery-ui",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "object"
+    },
+    "initialOpen": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

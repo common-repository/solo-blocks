@@ -1,0 +1,1 @@
+(()=>{"use strict";window.wp.sbFrontend.Hooks.doAction("register","accordion",(function(e,o){var t=e.querySelector(".sb-accordion-items");t&&jQuery(t).accordion({classes:"",header:".sb-accordion-item-title",icons:"",active:+e.dataset.activeTab,collapsible:!0,heightStyle:"content"})}))})();

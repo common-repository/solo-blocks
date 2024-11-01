@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/icon-list",
+  "version": "0.1.0",
+  "title": "SB Icon List",
+  "category": "sb-blocks",
+  "keywords": [
+    "solo",
+    "iconlist"
+  ],
+  "icon": "smiley",
+  "description": "Create visually appealing lists with customizable icons.",
+  "supports": {
+    "html": false,
+    "align": false,
+    "sb_uid": true,
+    "sb_dimension": true
+  },
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "script": "file:./frontend.js",
+  "style": [
+    "wp-sb-frontend",
+    "file:./frontend.css"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "none"
+    },
+    "contentAlignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "itemSpacing": {
+      "type": "number",
+      "default": 0
+    },
+    "iconSpacing": {
+      "type": "number",
+      "default": 10
+    },
+    "verticalAlignment": {
+      "type": "string",
+      "default": "middle"
+    },
+    "descriptionTypography": {
+      "type": "object"
+    }
+  }
+}

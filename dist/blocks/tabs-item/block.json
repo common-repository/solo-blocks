@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sb/tabs-item",
+  "version": "0.1.0",
+  "title": "Tab Item",
+  "category": "sb-blocks",
+  "keywords": [
+    "solo"
+  ],
+  "parent": [
+    "sb/tabs"
+  ],
+  "usesContext": [
+    "selectedItem",
+    "titleSize"
+  ],
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "sb_logo",
+  "editorScript": "file:./editor.js",
+  "editorStyle": "file:./editor.css",
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
